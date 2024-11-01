@@ -13,11 +13,11 @@ namespace CS_Form
     {
 
         
-        public TestButton(int x, int y,int width,int height)
+        public TestButton(int id,int x, int y,int width,int height)
         {
             Click += OnClick;
-
-            Text = "ボタン";
+            
+            Text = id.ToString();
               
             Location = new Point(x, y); //表示させる　Location
 
@@ -33,7 +33,7 @@ namespace CS_Form
         
         public void OnClick(object sender, EventArgs s)
         {
-            MessageBox.Show("lil鉄火巻");
+            MessageBox.Show(Text);
         }
 
     }
