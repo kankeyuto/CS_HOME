@@ -16,9 +16,20 @@ namespace CS_Form
         {
             InitializeComponent();
 
-            TestButton testButton = new TestButton();
+            for(int i = 0; i < 10; i++)
+            {
+                TestButton testButton = new TestButton((i%3) * 100,(i / 3) * 100, 100, 100);
+                Controls.Add(testButton);
+            }
+            //自分の
+            for (int i = 0; i < 10; i++)
+            {
+                TestButton testButton = new TestButton(i *100, 0, 100, 100);
+                Controls.Add(testButton);
+            }
 
-            Controls.Add(testButton);
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
