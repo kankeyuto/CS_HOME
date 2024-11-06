@@ -16,17 +16,29 @@ namespace CS_Form
         {
             InitializeComponent();
 
+
+
+
             for(int i = 0; i < 10; i++)
             {
                 TestButton testButton = new TestButton(i,(i%3) * 100,(i / 3) * 100, 100, 100);
                 Controls.Add(testButton);
             }
+
+            TestLabel testLabel =
+                new TestLabel("ラベルです。", 10, 300,100, 500);
+            Controls.Add(testLabel);
+
+            //Label label = new Label();
+            //label.Location = new Point(30, 400);
+            //label.Text = "ラベルです。";
+            //Controls.Add(label);
             //自分の
-            for (int i = 0; i < 10; i++)
-            {
-                TestButton testButton = new TestButton(i,i *100, 0, 100, 100);
-                Controls.Add(testButton);
-            }
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    TestButton testButton = new TestButton(i,i *100, 0, 100, 100);
+            //    Controls.Add(testButton);
+            //}
 
 
 
