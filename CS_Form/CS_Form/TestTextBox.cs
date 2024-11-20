@@ -8,6 +8,7 @@ using System.Windows.Forms;
 
 
 
+
 namespace CS_Form
 {
     class TestTextBox : TextBox
@@ -23,10 +24,14 @@ namespace CS_Form
 
 
         }
-        //public void TextBoxUpdate(string str)
-        //{
-        //    Text = str;
-        //}
+        public string ButtonLabelReplacement(string str)
+        {
+            string temp = Text;
+            Text = str;
+            return temp;
+        }
+
+        
     }
 
 

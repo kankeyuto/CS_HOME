@@ -14,11 +14,7 @@ namespace CS_Form
     {
         TestLabel _testlabel;
 
-        TestTextBox _txetBox;
-
-        KadaiButton _kadaiButton;
-
-        KadaiTextBox _kadaiTextBox;
+        TestTextBox _textBox;
 
         public Form1()
         {
@@ -50,15 +46,10 @@ namespace CS_Form
                 new TestLabel("ラベルです。", 10, 300,100, 500);
             Controls.Add(_testlabel) ;
 
-            _txetBox = new TestTextBox("テキストボックス1",150,400,500,100);
-            Controls.Add(_txetBox) ;
+            _textBox = new TestTextBox("テキストボックス1",150,400,500,100);
+            Controls.Add(_textBox) ;
 
-            _kadaiTextBox = 
-                new KadaiTextBox("テキストボックス2", 150, 450, 500, 100);
-            Controls.Add(_kadaiTextBox) ;
-
-            _kadaiButton = new KadaiButton(this,"入れ替える", 150, 500, 100, 100);
-            Controls.Add(_kadaiButton) ;
+            
 
             //Label label = new Label();
             //label.Location = new Point(30, 400);
@@ -72,10 +63,13 @@ namespace CS_Form
             _testlabel.LabelTextUpdate(str);
         }
         
-        //public void TextBoxUpdate(string str)
-        //{
-        //    _txetBox.TextBoxUpdate(str);
-        //}
+        public string ButtonLabelReplacement(string str)
+        {
+            string s = _textBox.ButtonLabelReplacement(str);
+
+            return s;
+
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
