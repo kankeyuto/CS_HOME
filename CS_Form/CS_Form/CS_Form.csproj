@@ -52,12 +52,21 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="KadaiButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="KadaiTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="TestLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TestTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <EmbeddedResource Include="Form1.resx">

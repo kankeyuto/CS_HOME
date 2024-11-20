@@ -8,12 +8,11 @@ using System.Windows.Forms;
 
 
 
-
 namespace CS_Form
 {
-internal class TestLabel : Label
+    class TestTextBox : TextBox
     {
-        public TestLabel(string str, int x, int y, int width, int height)
+        public TestTextBox(string str, int x, int y, int width, int height)
         {
 
             Text = str;
@@ -23,18 +22,13 @@ internal class TestLabel : Label
             Size = new Size(width, height); //サイズ指定　Size
 
 
-
-
-
-
         }
-        public void LabelTextUpdate(string str)
-        {
-            Text = str;
-        }
-
+        //public void TextBoxUpdate(string str)
+        //{
+        //    Text = str;
+        //}
     }
-    
 
-    
+
+
 }

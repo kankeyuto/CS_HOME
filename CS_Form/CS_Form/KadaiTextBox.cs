@@ -7,34 +7,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-
-
 namespace CS_Form
 {
-internal class TestLabel : Label
+    internal class KadaiTextBox : TextBox
     {
-        public TestLabel(string str, int x, int y, int width, int height)
+        public KadaiTextBox(string strs, int x, int y, int width, int height)
         {
 
-            Text = str;
+            Text = strs;
 
             Location = new Point(x, y); //表示させる　Location
 
             Size = new Size(width, height); //サイズ指定　Size
 
 
-
-
-
-
         }
-        public void LabelTextUpdate(string str)
-        {
-            Text = str;
-        }
-
     }
-    
-
-    
 }
